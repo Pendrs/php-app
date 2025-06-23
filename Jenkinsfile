@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Pendrs/php-app' // ganti dengan repo Anda
+                git branch: 'main', url: 'https://github.com/Pendrs/php-app.git'
             }
         }
 
